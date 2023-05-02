@@ -1,13 +1,19 @@
 // import styles
 import "./styles/main.scss";
-// import svg logo
-import logo from "./assets/todo-icon.svg";
-import generateJoke from "./generateJoke";
+import App from "./App";
 
-const todoLogo = document.getElementById("todo-logo");
-todoLogo.src = logo;
+// Init App
+const app = new App();
+app.init();
 
-const newJoke = generateJoke();
+// app.addTodoToFolder("Inbox", new Todo("Test", "Test", "2021-09-30", "High"));
+// app.getFolders();
 
-console.log(newJoke);
-console.log(123);
+// const modalButton = document.createElement("button");
+// modalButton.textContent = "Add A Todo";
+// modalButton.classList.add("btn-outline");
+// modalButton.addEventListener("click", () => {
+//   app.renderTodoModal();
+// });
+
+// document.querySelector(".container-box").append(modalButton);
